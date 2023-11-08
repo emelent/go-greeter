@@ -1,7 +1,6 @@
 package greeter
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -15,7 +14,7 @@ func TestHello(t *testing.T) {
 	}
 
 	for _, tt := range tests {
-		testName := fmt.Sprintf("_%s", tt.name)
+		testName := tt.name
 		t.Run(testName, func(t *testing.T) {
 			actual := Hello(tt.name)
 			if actual != tt.expected {
