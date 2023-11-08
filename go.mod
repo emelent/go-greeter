@@ -1,3 +1,3 @@
-module emelent.github.io/go-greeter
+module github.com/emelent/go-greeter
 
 go 1.21.2
